@@ -1,0 +1,181 @@
+body {
+  cursor: default;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-track {
+  background-color: aliceblue;
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+.MemberEditor {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 90000;
+
+  background-color: rgba(255, 255, 255, 0.7);
+
+  display: none;
+}
+.MemberEditor.opened {
+  display: flex;
+}
+.MemberEditor > * {
+  overflow: auto !important;
+  max-height: 80vh;
+  max-width: 500px;
+}
+
+.EventEditor {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+
+  z-index: 4000;
+
+  display: none;
+}
+.EventEditor.opened {
+  display: block;
+}
+.MuiAutocomplete-popper {
+  z-index: 4001 !important;
+}
+.EventEditor:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.EventEditor > div {
+  background-color: white;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+
+  border-left: solid 2px rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.BenefitDescription,
+.BenefitItem,
+.BenefitItem.DescriptionIsOpened .benefitItemBtnShowDescription .material-icons-round {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  opacity: 1;
+}
+.BenefitItemIsDNone {
+  display: none;
+}
+.BenefitItemHideToOpacity0 {
+  opacity: 0 !important;
+}
+
+.BenefitItem.DescriptionIsOpened .benefitItemBtnShowDescription .material-icons-round {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.TeamItem {
+  border: none;
+  border-top: solid 2px rgba(0, 0, 0, 0.4) !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+* > .TeamItem:last-child {
+  border-bottom: none !important;
+}
+
+.zmodal {
+  z-index: 4000;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  display: none; /*  */
+  align-items: center;
+  justify-content: center;
+}
+.zmodal.opened {
+  display: flex;
+}
+.zmodal_content {
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.zmodal_card_holder {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+
+.sidebarmenu a[href*="elpa/login"],
+.sidebarmenu a[href*="elpa/topic/"],
+.sidebarmenu a[href*="elpa/topics/"],
+.sidebarmenu a[href*="elpa/folders/"],
+.sidebarmenu a[href*="elpa/program/"],
+.sidebarmenu a[href*="elpa/faq/"],
+.sidebarmenu a[href*="elpa/teams/"] {
+  display: none !important;
+}
+
+.svg_icons {
+  transform: scale(4);
+  margin-top: 1rem;
+}
+
+.programDetailsEclips {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* after 5 line show ... */
+  -webkit-box-orient: vertical;
+  height: 105px;
+}
+
+.program-inner-text {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 14px;
+}
+
+.program-inner-text img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

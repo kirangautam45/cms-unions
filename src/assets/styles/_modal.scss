@@ -1,0 +1,300 @@
+/*Right*/
+/* ----- MODAL STYLE ----- */
+
+.modal.right_modal {
+    .modal-dialog {
+        position: fixed;
+        margin: auto;
+        width: 480px;
+        height: 100%;
+        -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+        -o-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+    }
+
+    .modal-content {
+        height: 100vh !important;
+    }
+
+    .modal-body {
+        padding: 15px 15px 30px;
+    }
+}
+
+.modal-dialog {
+    margin: 1.75rem auto;
+}
+
+.modal.right_modal.fade {
+    .modal-dialog {
+        right: -50%;
+        -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+        -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+        -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+        transition: opacity 0.3s linear, right 0.3s ease-out;
+    }
+}
+
+.modal.right_modal.fade.show {
+    .modal-dialog {
+        right: 0;
+    }
+}
+
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.modal-header {
+    .modal-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.modal_outer {
+    .modal-body {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 91vh;
+    }
+}
+
+@media (min-width: 576px) {
+    .right_modal {
+        .modal-dialog {
+            max-width: 100%;
+        }
+    }
+}
+
+// Event Form Style
+.event-form {
+    .card {
+        width: 100%;
+        height: 160px;
+        border: 1px dashed #C4C4C4;
+        border-radius: 8px;
+
+        .close {
+            position: absolute;
+            right: 0;
+            z-index: 99;
+        }
+
+        .card-img-top {
+            position: relative;
+            padding: 10px;
+            max-height: 160px;
+        }
+    }
+
+    .card-body {
+        .cover-button {
+            button {
+                color: #FD6C12;
+                border: 1px solid #DBD6DE;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: -0.408px;
+                line-height: 22px;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    background: none;
+                    background-color: none !important;
+                    border-color: none !important;
+                }
+            }
+        }
+
+    }
+
+    .custom-switch .custom-control-label::before {
+        width: 50px !important;
+        border-radius: 30px !important;
+        height: 26px !important;
+        left: -3.25rem;
+        top: 0;
+        border: transparent;
+    }
+
+    .custom-switch .custom-control-label::after {
+        width: 24px;
+        height: 24px;
+        border-radius: 30px;
+        top: calc(0rem + 1px);
+        left: calc(-3.25rem + 1px);
+    }
+
+    .custom-switch .custom-control-input:checked~.custom-control-label::after {
+        background-color: #FD6C12;
+        border-radius: 30px;
+        top: calc(0rem + 1px);
+        left: calc(-3.25rem + 13px);
+    }
+
+    .custom-switch .custom-control-input:disabled:checked~.custom-control-label::before {
+        background-color: #F4F5F8;
+    }
+
+    .custom-control-input:not(:disabled):active~.custom-control-label::before,
+    .custom-control-input:checked~.custom-control-label::before {
+        background-color: #F4F5F8;
+        // border-color: #E1E1E1;
+        color: #E1E1E1;
+    }
+
+    .form-check-input {
+        position: absolute;
+        margin-left: 0;
+        margin-top: 0;
+        width: 24px;
+        height: 24px;
+    }
+
+    .tags {
+        .tags-header {
+            .tag-icon {
+                background: #FBD0B5;
+                padding: 8px;
+                border-radius: 8px;
+                margin-right: 8px;
+                margin-bottom: 0;
+                width: 40px;
+                height: 40px;
+            }
+
+            .tag-subtitle {
+                color: $font-secondary;
+                font-size: $default-font-size;
+                font-weight: 400;
+                margin-top: 8px;
+            }
+        }
+
+        .tags-list {
+            margin-top: 20px;
+
+            button {
+                font-size: 14px;
+                color: #78707C;
+                background: #FFFFFF;
+                border: 1px solid #DBD6DE;
+                border-radius: 30px;
+                padding: 8px 12px;
+                align-items: flex-start;
+                margin-right: 8px;
+                font-weight: 500;
+                word-wrap: break-word;
+            }
+        }
+
+        .react-tagsinput {
+            margin-top: 10px;
+            border: unset;
+            padding: 0
+        }
+
+    }
+
+}
+
+.benefit-form {
+    .form-control {
+        border-radius: 8px;
+    }
+    .form-check-input{
+        margin: 0;
+        margin-top: 0;
+    }
+    .form-check-label{
+        margin-bottom: 0;
+        line-height: 27px;
+    }
+    
+    button {
+        border-radius: 8px;
+    }
+}
+
+.members-form {
+    .form-control {
+        border-radius: 8px;
+    }
+    .form-check-input{
+        margin: 0;
+        margin-top: 0;
+    }
+    .form-check-label{
+        margin-bottom: 0;
+        line-height: 27px;
+    }
+    
+    button {
+        border-radius: 8px;
+    }
+}
+
+.frame-14195 {
+    width: 522px;
+    height: 33px;
+}
+
+.frame-141861 {
+    padding: 7px 11px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(219, 214, 222, 1);
+    height: 100%;
+}
+
+.frame-14186 {
+    width: 100%;
+    height: 100%;
+}
+
+.txt-485 {
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: rgba(120, 112, 124, 1);
+    word-wrap: break-word;
+    margin-right: 6px;
+}
+
+.icon-close {
+    width: 16px;
+    height: 16px;
+}
+
+.frame-14196 {
+    padding: 7px 11px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(219, 214, 222, 1);
+    height: 100%;
+}
+
+.frame-14186 {
+    width: 100%;
+    height: 100%;
+}
+
+.txt-515 {
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: rgba(120, 112, 124, 1);
+    word-wrap: break-word;
+}

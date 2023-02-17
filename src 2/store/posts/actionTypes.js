@@ -1,0 +1,11 @@
+
+export const GET_MASTER_DATA = "GET_MASTER_DATA";
+export const GET_MASTER_DATA_SUCCESS = "GET_MASTER_DATA_SUCCESS";
+export const GET_MASTER_DATA_FAIL = "GET_MASTER_DATA_FAIL";
+export const GET_PARTY = "GET_PARTY";
+export const GET_PARTY_SUCCESS = "GET_PARTY_SUCCESS";
+export const GET_PARTY_FAIL = "GET_PARTY_FAIL";
+
+export const GET_ITEM = "GET_ITEM";
+export const GET_ITEM_SUCCESS = "GET_ITEM_SUCCESS";
+export const GET_ITEM_FAIL = "GET_ITEM_FAIL";
